@@ -31,6 +31,6 @@ jobs:
           tf_actions_version: 0.12.24
           tf_actions_subcommand: 'apply'
           tf_actions_working_dir: './terraform'
-          args: '-var="client_secret=${{ secrets.AZURE_CLIENT_SECRET }}"'
+          #args: '-var="client_secret=${{ secrets.AZURE_CLIENT_SECRET }}"'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
