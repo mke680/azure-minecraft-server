@@ -1,6 +1,8 @@
 name: 'Terraform Deploy'
 on:
-  - push_request
+  push:
+    branches:
+      - master
 jobs:
   terraform:
     name: 'Deploy To Azure'
