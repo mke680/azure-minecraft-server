@@ -6,6 +6,6 @@ provider "azurerm" {
   subscription_id = "faaae9cc-6d6c-4370-adab-afc917594c0d"
 }
 resource "azurerm_resource_group" "rg" {
-        name = "testResourceGroup0201"
-        location = "australiaeast"
+  name     = "testResourceGroup0201"
+  location = "australiaeast"
 }
