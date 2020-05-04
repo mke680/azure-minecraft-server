@@ -11,11 +11,6 @@ resource "azurerm_virtual_network" "vnet" {
   address_space       = ["172.16.0.0/16"]
   dns_servers         = ["1.1.1.1", "1.0.0.1"]
 
-  #ddos_protection_plan {
-    #id     = azurerm_network_ddos_protection_plan.ddos.id
-    #enable = false
-  #}
-
   subnet {
     name           = "default"
     address_prefix = "172.16.2.0/24"
