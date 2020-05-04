@@ -5,7 +5,8 @@ provider "azurerm" {
   features {}
   subscription_id = "faaae9cc-6d6c-4370-adab-afc917594c0d"
 }
+
 resource "azurerm_resource_group" "rg" {
-  name     = "sr-craftlab-01"
+  name     = "SR-CRAFTLAB-01"
   location = "australiaeast"
 }
